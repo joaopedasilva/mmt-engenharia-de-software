@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriBlog</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+     <!--Cabeçalho-->  
+    <header class="cabecalho">
+        <div class="container">
+            <div class="logo">
+              <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="artigos.html">Artigos</a></li>
+                    <li><a href="#">Receitas</a></li>
+                    <li><a href="#calcular">Calcular IMC</a></li>
+                    <li><a href="https://dietbox.me/pt-BR/Nutricionistas">Encontre Seu Nutricionista</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li></li><a href="login.html"><li class="menu" ><button class="login">Entrar</button></li></a></li>
+                    <!-- Adicione mais itens de menu conforme necessário -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!--VIDEO DE FUNDO-->
+    <div class="fundo">
+        <video autoplay muted loop>
+            <source src="img/video2.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!--ARTIGOS-->
+    
+    <div class="artigos">
+        <div class="arttexto">
+            <h1>Artigo teste 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos itaque soluta blanditiis perferendis
+            a culpa corporis totam, aperiam at numquam in incidunt placeat alias est ex fuga enim nostrum possimus?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse ipsum, numquam molestiae unde
+            ut, a, recusandae odit saepe nam rem voluptatibus sint. Ipsam adipisci earum impedit unde vitae molestias!</p>
+            <a href="pagina-de-leitura-mais.html" class="lerMaisBtn">Ler mais</a>
+            <a href="artigos.html"><button class="artbnt">Visualizar mais Artigos</button></a>
+        </div>        
+        <div class="artimagem">
+            <img src="img/nutricao.jpg" alt="">
+        </div> 
+</div>
+
+<div class="artigos">
+        <div class="arttexto">
+            <h1>Artigo teste 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos itaque soluta blanditiis perferendis
+            a culpa corporis totam, aperiam at numquam in incidunt placeat alias est ex fuga enim nostrum possimus?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse ipsum, numquam molestiae unde
+            ut, a, recusandae odit saepe nam rem voluptatibus sint. Ipsam adipisci earum impedit unde vitae molestias!</p>
+            <a href="pagina-de-leitura-mais.html" class="lerMaisBtn">Ler mais</a>
+            <a href="artigos.html"><button class="artbnt">Visualizar mais Artigos</button></a>
+        </div>        
+        <div class="artimagem">
+            <img src="img/nutricao.jpg" alt="">
+        </div> 
+</div>
+    
+<!--RECEITAS-->
+<div class="receitas">
+    <h1>RECEITAS</h1> 
+</div>
+<div class="receitas">
+    <div class="rectexto">
+        <h2>Sanduíche natural</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos itaque soluta blanditiis perferendis
+        a culpa corporis totam, aperiam at numquam in incidunt placeat alias est ex fuga enim nostrum possimus?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse ipsum, numquam molestiae unde
+        ut, a, recusandae odit saepe nam rem voluptatibus sint. Ipsam adipisci earum impedit unde vitae molestias!
+        <a href="pagina-de-leitura-mais.html" class="lerMaisBtn">Ler mais</a></p>
+        
+        <button class="recbnt">Visualizar mais Receitas</button>
+    </div>        
+    <div class="recimagem">
+        <img src="img/sanduiiche.webp" alt="">
+    </div> 
+</div>
+
+<div class="receitas">
+    <div class="rectexto">
+        <h2>Sanduíche natural</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos itaque soluta blanditiis perferendis
+        a culpa corporis totam, aperiam at numquam in incidunt placeat alias est ex fuga enim nostrum possimus?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse ipsum, numquam molestiae unde
+        ut, a, recusandae odit saepe nam rem voluptatibus sint. Ipsam adipisci earum impedit unde vitae molestias!
+        <a href="pagina-de-leitura-mais.html" class="lerMaisBtn">Ler mais</a></p>
+        
+        <button class="recbnt">Visualizar mais Receitas</button>
+    </div>        
+    <div class="recimagem">
+        <img src="img/sanduiiche.webp" alt="">
+    </div> 
+</div>
+<!--CALCULADORA IMC-->
+<div class="calculadora" id="calcular">
+    <div class="caltexto">
+        <h2>Calculadora de IMC</h2>
+        <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde
+        para calcular o peso ideal de cada pessoa. </p>
+        <p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado.
+        Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
+        <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos ao lado e compare com os índices da tabela.</p>
+    </div>
+    <div class="calculo">
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso"> <br>
+        <label for="altura">Altura (cm):</label>
+        <input type="number" id="altura"> <br>
+        <button class="calbnt" onclick="calcularIMC()">Calcular</button>
+        <button class="calbnt" onclick="limparCampos()">Limpar</button>
+        <div id="resultado"></div>
+    </div>
+</div>
+<div class="info-imc">
+    <h2>Interpretação do IMC</h2>
+    <table>
+        <tr>
+            <th>IMC</th>
+            <th>Classificação</th>
+            <th>Obesidade (Grau)</th>
+        </tr>
+        <tr>
+            <td>MENOR QUE 18,5</td>
+            <td>MAGREZA</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>ENTRE 18,5 E 24,9</td>
+            <td>NORMAL</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>ENTRE 25,0 E 29,9</td>
+            <td>SOBREPESO</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>ENTRE 30,0 E 39,9</td>
+            <td>OBESIDADE</td>
+            <td>II</td>
+        </tr>
+        <tr>
+            <td>MAIOR QUE 40,0</td>
+            <td>OBESIDADE GRAVE</td>
+            <td>III</td>
+        </tr>
+    </table>
+</div>
+     
+<footer class="rodape">
+    <div class="container">
+        <p>&copy; 2024 NutriBlog.com. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<script src="js/cabecalho.js"></script>
+</body>
+</html>
