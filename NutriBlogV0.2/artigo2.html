@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriBlog</title>
+    <link rel="stylesheet" href="css/artigo1.css">
+</head>
+<body>
+    <!--Cabeçalho-->  
+    <header class="cabecalho">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="artigos.html">Artigos</a></li>
+                    <li><a href="receitas.html">Receitas</a></li>
+                    <li><a href="index.html">Calcular IMC</a></li>
+                    <li><a href="https://dietbox.me/pt-BR/Nutricionistas">Encontre Seu Nutricionista</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li></li><a href="login.html"><li class="menu" ><button class="login">Entrar</button></li></a></li>
+                    <!-- Adicione mais itens de menu conforme necessário -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--ARTIGOS-->
+    
+    <div class="artigos" id="art1">
+        <div class="arttexto">
+            <h1>A Relação entre Alimentação e Bem-Estar: Uma Conexão Vital</h1>
+            <p>A alimentação é um dos pilares fundamentais para a manutenção da saúde e do bem-estar. 
+                O que comemos não apenas nutre nosso corpo, mas também afeta diretamente nosso estado mental 
+                e emocional. Uma dieta equilibrada e consciente desempenha um papel crucial na promoção de 
+                uma vida saudável e plena, impactando significativamente diversos aspectos do nosso bem-estar.</p>
+            <div class="artimg">
+                <img src="img/art2.jpeg" alt="Imagem sobre nutrição">
+            </div>
+            <div class="arttext">
+            <h2>Saúde Física: A Base de Tudo</h2>
+            <p>Uma alimentação balanceada fornece os nutrientes essenciais necessários para o funcionamento 
+                adequado do corpo. Macronutrientes, como carboidratos, proteínas e gorduras, e micronutrientes, 
+                como vitaminas e minerais, desempenham papéis vitais em processos como a produção de energia, a 
+                construção e reparação de tecidos e o suporte ao sistema imunológico. Nutrientes como a vitamina C, 
+                a vitamina D, o zinco e o selênio são fundamentais para fortalecer as defesas do corpo contra infecções, 
+                enquanto dietas ricas em frutas, vegetais, fibras e proteínas magras ajudam a manter um peso saudável, 
+                prevenindo obesidade e doenças relacionadas. O consumo de gorduras saudáveis, como os ômega-3 encontrados 
+                em peixes, e a redução de gorduras saturadas e trans contribuem para a saúde do coração e dos vasos 
+                sanguíneos.</p>
+            <h2>Alimentação e Saúde Mental</h2>
+            <p>A conexão entre alimentação e saúde mental tem ganhado crescente atenção na comunidade científica. 
+                O cérebro, assim como o resto do corpo, necessita de nutrientes específicos para funcionar de maneira 
+                otimizada. Ácidos graxos ômega-3, encontrados em peixes como salmão e sardinha, são essenciais para a 
+                saúde cerebral e podem ajudar a reduzir sintomas de depressão e ansiedade. Frutas e vegetais ricos em 
+                antioxidantes, como berries, espinafre e nozes, protegem o cérebro contra o estresse oxidativo, que 
+                pode levar a transtornos mentais. Vitaminas do complexo B, encontradas em alimentos como carnes, ovos 
+                e legumes, são importantes para a produção de neurotransmissores que regulam o humor.</p>
+            <h2>Impacto Positivo na Saúde Mental</h2>
+            <p>Estudos mostram que dietas ricas em alimentos integrais, vegetais e peixes estão associadas a menores 
+                taxas de depressão e ansiedade. Comer regularmente e incluir uma variedade de alimentos nutritivos pode 
+                estabilizar os níveis de açúcar no sangue, prevenindo alterações bruscas de humor e cansaço. Além da 
+                composição nutricional, a maneira como nos relacionamos com a comida também é crucial para o bem-estar. 
+                A alimentação consciente, que envolve estar presente e atento ao ato de comer, pode promover uma relação 
+                mais saudável com a comida e com o corpo.</p>
+            <h2>Práticas de Alimentação Consciente</h2>
+            <p>Práticas de alimentação consciente incluem a apreciação do alimento, desfrutando dos sabores, texturas 
+                e aromas dos alimentos, o que pode aumentar a satisfação e prevenir o excesso de comida. Escutar o corpo 
+                e prestar atenção aos sinais de fome e saciedade ajudam a evitar a alimentação emocional e o comer em 
+                excesso. Fazer escolhas alimentares intencionais, optando por alimentos que nutram o corpo e a mente, 
+                ao invés de escolher com base em conveniência ou impulsos, também é essencial.</p>
+            <h2>Conclusão: Alimentação e Bem-Estar</h2>
+            <p>A alimentação tem um impacto profundo e abrangente no bem-estar físico e mental. Adotar uma dieta 
+                equilibrada, rica em nutrientes essenciais, e praticar a alimentação consciente são estratégias 
+                fundamentais para promover a saúde geral. Reconhecer a importância da alimentação não apenas como 
+                combustível, mas como um elemento central para a saúde e o bem-estar, é o primeiro passo para uma 
+                vida mais saudável e equilibrada.</p>
+           
+            </div>
+        </div>        
+    </div>
+    <!--Bões para editar e excluir artigos-->
+    <!-- Botões de editar e excluir -->
+<div class="action-buttons">
+    <button class="edit-button" onclick="openEditPopup()">Editar</button>
+    <button class="delete-button" onclick="openDeletePopup()">Excluir</button>
+</div>
+
+<!-- Popup de edição de artigo -->
+<div id="editPopup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closeEditPopup()">&times;</span>
+        <!-- Formulário de edição de artigo -->
+        <h2>Editar Artigo</h2>
+        <form id="editForm" enctype="multipart/form-data">
+            <label for="titulo">Título:</label><br>
+            <input type="text" id="titulo" name="titulo"><br>
+            <label for="conteudo">Conteúdo:</label><br>
+            <textarea id="conteudo" name="conteudo"></textarea><br>
+            <label for="imagem">Imagem:</label><br>
+            <input type="file" id="imagem" name="imagem"><br>
+            <button type="submit" class="salve">Salvar</button>
+        </form>
+    </div>
+</div>
+
+<!-- Popup de confirmação de exclusão -->
+<div id="deletePopup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closeDeletePopup()">&times;</span>
+        <h2>Confirmar Exclusão</h2>
+        <p>Você tem certeza que deseja excluir este artigo?</p>
+        <button onclick="deleteArticle()">Sim, excluir</button>
+    </div>
+</div>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; 2024 NutriBlog.com. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/artigo1.js"></script>
+</body>
+</html

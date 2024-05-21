@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriBlog</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+     <!--Cabeçalho-->  
+    <header class="cabecalho">
+        <div class="container">
+            <div class="logo">
+              <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="artigos.html">Artigos</a></li>
+                    <li><a href="receitas.html">Receitas</a></li>
+                    <li><a href="#calcular">Calcular IMC</a></li>
+                    <li><a href="https://dietbox.me/pt-BR/Nutricionistas">Encontre Seu Nutricionista</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li></li><a href="login.html"><li class="menu" ><button class="login">Entrar</button></li></a></li>
+                    <!-- Adicione mais itens de menu conforme necessário -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!--VIDEO DE FUNDO-->
+    <div class="fundo">
+        <video autoplay muted loop>
+            <source src="img/video2.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!--ARTIGOS-->
+    
+    <div class="artigos">
+        <div class="arttexto">
+            <h1>A Influência da Mídia no Comportamento Alimentar: Um Olhar Crítico</h1>
+            <p>A relação entre a mídia e o comportamento alimentar tem sido objeto de considerável debate
+                e análise nas últimas décadas. Desde a ascensão da televisão até a era digital dominada 
+                pelas redes sociais, somos constantemente bombardeados por mensagens sobre alimentos, dietas 
+                e corpo ideal. Este artigo explora como a mídia influencia nossas escolhas alimentares e como 
+                essa influência pode afetar nossa saúde e bem-estar.</p>
+            <a href="artigo1.html" class="lerMaisBtn">Ler mais</a>
+            <a href="artigos.html"><button class="artbnt">Visualizar mais Artigos</button></a>
+        </div>        
+        <div class="artimagem">
+            <img src="img/art1.jpg" alt="">
+        </div> 
+</div>
+
+<div class="artigos">
+        <div class="arttexto">
+            <h1>A Relação entre Alimentação e Bem-Estar: Uma Conexão Vital</h1>
+            <p>A alimentação é um dos pilares fundamentais para a manutenção da saúde e do bem-estar. O que comemos 
+                não apenas nutre nosso corpo, mas também afeta diretamente nosso estado mental e emocional. Uma dieta 
+                equilibrada e consciente desempenha um papel crucial na promoção de uma vida saudável e plena, 
+                impactando significativamente diversos aspectos do nosso bem-estar.</p>
+            <a href="artigo2.html" class="lerMaisBtn">Ler mais</a>
+            <a href="artigos.html"><button class="artbnt">Visualizar mais Artigos</button></a>
+        </div>        
+        <div class="artimagem">
+            <img src="img/art2.jpeg" alt="">
+        </div> 
+</div>
+    
+<!--RECEITAS-->
+<div class="receitas">
+    <h1>RECEITAS</h1> 
+</div>
+<div class="receitas">
+    <div class="rectexto">
+        <h2>Sanduíche Natural</h2>
+        <p>Os sanduíches naturais são práticos, saborosos e nutritivos, ideais para lanches ou refeições rápidas. 
+            Usar ingredientes frescos e integrais fornece nutrientes essenciais, como proteínas, fibras, vitaminas 
+            e minerais, ajudando a manter a energia, melhorar a digestão e apoiar a saúde geral.
+        <a href="receita1.html" class="lerMaisBtn">Ler mais</a></p>
+        
+        <a href="receitas.html"><button class="artbnt">Visualizar mais Receitas</button></a>
+    </div>        
+    <div class="recimagem">
+        <img src="img/sanduiiche.webp" alt="">
+    </div> 
+</div>
+
+<div class="receitas">
+    <div class="rectexto">
+        <h2>Frango com Legumes na Panela de Pressão</h2>
+        <p>Este prato é perfeito para um jantar rápido e nutritivo. Usando a panela de pressão, você pode preparar 
+            uma refeição completa em minutos. O frango fornece proteínas magras, enquanto os legumes oferecem uma 
+            variedade de vitaminas, minerais e fibras essenciais para a saúde.</p>
+        <a href="receita2.html" class="lerMaisBtn">Ler mais</a></p>
+        
+        <a href="receitas.html"><button class="artbnt">Visualizar mais Receitas</button></a>
+    </div>        
+    <div class="recimagem">
+        <img src="img/receita2.jpg" alt="">
+    </div> 
+</div>
+<!--CALCULADORA IMC-->
+<div class="calculadora" id="calcular">
+    <div class="caltexto">
+        <h2>Calculadora de IMC</h2>
+        <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde
+        para calcular o peso ideal de cada pessoa. </p>
+        <p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado.
+        Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
+        <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos ao lado e compare com os índices da tabela.</p>
+    </div>
+    <div class="calculo">
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso"> <br>
+        <label for="altura">Altura (cm):</label>
+        <input type="number" id="altura"> <br>
+        <button class="calbnt" onclick="calcularIMC()">Calcular</button>
+        <button class="calbnt" onclick="limparCampos()">Limpar</button>
+        <div id="resultado"></div>
+    </div>
+</div>
+<div class="info-imc">
+    <h2>Interpretação do IMC</h2>
+    <table>
+        <tr>
+            <th>IMC</th>
+            <th>Classificação</th>
+            <th>Obesidade (Grau)</th>
+        </tr>
+        <tr>
+            <td>MENOR QUE 18,5</td>
+            <td>MAGREZA</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>ENTRE 18,5 E 24,9</td>
+            <td>NORMAL</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>ENTRE 25,0 E 29,9</td>
+            <td>SOBREPESO</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>ENTRE 30,0 E 39,9</td>
+            <td>OBESIDADE</td>
+            <td>II</td>
+        </tr>
+        <tr>
+            <td>MAIOR QUE 40,0</td>
+            <td>OBESIDADE GRAVE</td>
+            <td>III</td>
+        </tr>
+    </table>
+</div>
+     
+<footer class="rodape">
+    <div class="container">
+        <p>&copy; 2024 NutriBlog.com. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<script src="js/cabecalho.js"></script>
+</body>
+</html>

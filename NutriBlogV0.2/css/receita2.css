@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif; /* Define a fonte Roboto como fonte padrão para todo o site */
+}
+
+/*CABEÇALHO FIXO */
+.cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #9dcc9b;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    /*justify-content: baseline;*/
+    padding: 5px;
+    margin-top: 10px;
+    
+}
+
+.logo img {
+    max-height: 80px; /* Definindo uma altura máxima para a logo */
+    margin-right: 29px; /* Espaçamento entre a logo e o menu */
+    margin-left: 10px;
+}
+
+nav{
+    align-items: center;
+    justify-content: space-between; /* Adicionando espaço entre a logo e o menu */
+    padding: 0px; 
+    
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 22px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/*-------------FIM--------------*/
+
+/*Botão para fazer login*/
+nav .login {
+    display: inline-block;
+    padding: 10px 20px; /*Altura e largura do botão*/
+    background-color: #f5f5f5; /* Cor de fundo */
+    color: black; /* Cor do texto */
+    border: 1px;
+    border-radius: 50px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+    
+}
+
+/* Hover do botão dentro do menu */
+nav .login:hover {
+    background-color: #2a9144; /* Cor de fundo no hover */
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container2 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 110px;
+}
+
+.container2 h2, h3 {
+    color: #333;
+}
+
+.container2 h3{
+    margin-top: 50px;
+}
+.container2 ul, ol {
+    margin: 10px 0;
+    padding: 0 20px;
+}
+
+.container2 ul li, ol li {
+    margin-bottom: 10px;
+}
+
+.container2 ul li strong, ol li strong {
+    color: #333;
+}
+
+.container2 li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.container2 li input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+
+.container2 p {
+    color: #666;
+    margin: 10px 0;
+}
+
+
+/*RADAPE*/
+
+.rodape {
+    background-color: #9dcc9b; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto no rodapé */
+    padding: 20px 0; /* Espaçamento interno do rodapé */
+    text-align: center; /* Alinhamento do texto no centro */
+}
+
+.container {
+    max-width: 1200px; /* Largura máxima do conteúdo do rodapé */
+    margin: 0 auto; /* Centraliza o conteúdo do rodapé horizontalmente */
+}

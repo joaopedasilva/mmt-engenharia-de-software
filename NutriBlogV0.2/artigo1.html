@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriBlog</title>
+    <link rel="stylesheet" href="css/artigo1.css">
+</head>
+<body>
+    <!--Cabeçalho-->  
+    <header class="cabecalho">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="artigos.html">Artigos</a></li>
+                    <li><a href="receitas.html">Receitas</a></li>
+                    <li><a href="index.html">Calcular IMC</a></li>
+                    <li><a href="https://dietbox.me/pt-BR/Nutricionistas">Encontre Seu Nutricionista</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li></li><a href="login.html"><li class="menu" ><button class="login">Entrar</button></li></a></li>
+                    <!-- Adicione mais itens de menu conforme necessário -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--ARTIGOS-->
+    
+    <div class="artigos" id="art1">
+        <div class="arttexto">
+            <h1>A Influência da Mídia no Comportamento Alimentar: Um Olhar Crítico</h1>
+            <p>A relação entre a mídia e o comportamento alimentar tem sido objeto de considerável debate
+                 e análise nas últimas décadas. Desde a ascensão da televisão até a era digital dominada 
+                 pelas redes sociais, somos constantemente bombardeados por mensagens sobre alimentos, dietas 
+                 e corpo ideal. Este artigo explora como a mídia influencia nossas escolhas alimentares e como 
+                 essa influência pode afetar nossa saúde e bem-estar.</p>
+            <div class="artimg">
+                <img src="img/art1.jpg" alt="Imagem sobre nutrição">
+            </div>
+            <div class="arttext">
+            <h2>A Mídia como Formadora de Opinião</h2>
+            <p>A mídia desempenha um papel significativo na formação de nossas percepções sobre alimentos e dietas. 
+                Programas de televisão, filmes, anúncios, revistas e redes sociais muitas vezes retratam determinados 
+                alimentos como desejáveis, associando-os a um estilo de vida glamouroso ou a uma imagem corporal 
+                idealizada. Por exemplo, a publicidade de fast food muitas vezes enfatiza conveniência e prazer, 
+                enquanto as mídias sociais podem promover dietas da moda ou padrões de beleza inatingíveis.</p>
+            <h2>Modelos de Corpo e Pressão Estética</h2>
+            <p>Uma das maneiras mais evidentes pela qual a mídia influencia o comportamento alimentar é 
+                através da promoção de certos padrões de beleza e corpos idealizados. Modelos e celebridades 
+                frequentemente são exibidos com corpos magros e tonificados, criando uma pressão social para 
+                que as pessoas alcancem esses padrões. Isso pode levar a comportamentos alimentares prejudiciais, 
+                como dietas extremas, compulsão alimentar e distúrbios alimentares como anorexia e bulimia.</p>
+            <h2>Normalização de Comportamentos Alimentares Não Saudáveis</h2>
+            <p>Além de promover padrões de beleza inatingíveis, a mídia muitas vezes normaliza comportamentos 
+                alimentares não saudáveis. Programas de culinária e reality shows podem glorificar alimentos ricos 
+                em gordura, açúcar e calorias, incentivando o consumo excessivo e desequilibrado. Por outro lado, 
+                dietas extremas e restrições alimentares também são frequentemente retratadas como normais ou até 
+                mesmo aspiracionais, sem considerar os potenciais riscos para a saúde.</p>
+            <h2>Impacto na Saúde Mental e Física</h2>
+            <p>A influência da mídia no comportamento alimentar pode ter sérias consequências para a saúde mental 
+                e física. A obsessão com a contagem de calorias, a busca pelo corpo "perfeito" e a comparação 
+                constante com modelos inatingíveis podem levar a distúrbios alimentares, ansiedade, depressão e 
+                baixa autoestima. Além disso, dietas não balanceadas e ricas em alimentos processados podem contribuir 
+                para o desenvolvimento de doenças crônicas como obesidade, diabetes e doenças cardiovasculares.</p>
+            <h2>Empoderamento e Conscientização</h2>
+            <p>Apesar dos desafios apresentados pela influência da mídia no comportamento alimentar, é 
+                importante reconhecer que os consumidores têm o poder de questionar e resistir a essas mensagens. 
+                O aumento da conscientização sobre os padrões irrealistas promovidos pela mídia e o movimento em 
+                direção a uma abordagem mais holística da saúde e do bem-estar estão começando a mudar a conversa 
+                em torno da alimentação e do corpo. Empoderar-se com conhecimento sobre nutrição, desenvolver uma 
+                relação saudável com a comida e buscar representações mais diversificadas na mídia são passos 
+                importantes na promoção de escolhas alimentares conscientes e saudáveis.</p>
+            <h2>Conclusão</h2>
+        <p>A mídia desempenha um papel poderoso na formação de nossas atitudes e comportamentos em relação à 
+            alimentação. Ao destacar padrões de beleza inatingíveis, normalizar comportamentos não saudáveis e 
+            promover alimentos processados, a mídia pode influenciar negativamente nossa saúde e bem-estar. No entanto, 
+            ao nos educarmos, questionarmos as mensagens da mídia e promovermos uma cultura de aceitação e respeito 
+            pelo corpo, podemos mitigar esses efeitos e cultivar uma relação mais saudável e equilibrada com a comida.</p>
+            </div>
+        </div>        
+    </div>
+    <!--Bões para editar e excluir artigos-->
+    <!-- Botões de editar e excluir -->
+<div class="action-buttons">
+    <button class="edit-button" onclick="openEditPopup()">Editar</button>
+    <button class="delete-button" onclick="openDeletePopup()">Excluir</button>
+</div>
+
+<!-- Popup de edição de artigo -->
+<div id="editPopup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closeEditPopup()">&times;</span>
+        <!-- Formulário de edição de artigo -->
+        <h2>Editar Artigo</h2>
+        <form id="editForm" enctype="multipart/form-data">
+            <label for="titulo">Título:</label><br>
+            <input type="text" id="titulo" name="titulo"><br>
+            <label for="conteudo">Conteúdo:</label><br>
+            <textarea id="conteudo" name="conteudo"></textarea><br>
+            <label for="imagem">Imagem:</label><br>
+            <input type="file" id="imagem" name="imagem"><br>
+            <button type="submit" class="salve">Salvar</button>
+        </form>
+    </div>
+</div>
+
+<!-- Popup de confirmação de exclusão -->
+<div id="deletePopup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closeDeletePopup()">&times;</span>
+        <h2>Confirmar Exclusão</h2>
+        <p>Você tem certeza que deseja excluir este artigo?</p>
+        <button onclick="deleteArticle()">Sim, excluir</button>
+    </div>
+</div>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; 2024 NutriBlog.com. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/artigo1.js"></script>
+</body>
+</html>
